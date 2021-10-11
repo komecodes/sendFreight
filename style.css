@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #303030;
+}
+body input:focus, body select:focus{
+    outline: none;
+}
+/* Header styles */
+
+header{
+    padding: 15px 20px;
+    background: #0747a6;
+}
+h1{
+    padding: 0;
+    padding-left: 20px;
+    margin: 5px;
+    text-align: left;
+    position: relative;
+}
+h1 > img{
+    display: inline-block;
+    width: 60px;
+    padding-right: 3px;
+}
+.logo-freight{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 0.7em;
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    letter-spacing: 0.20px;
+    font-weight: 200;
+
+}
+.logo-searchbar-container{
+    width: 60%;
+    position: relative;
+    text-align: center;
+}
+.logo-wrapper{
+    width: 30%;
+}
+nav, .logo-searchbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header Search bar styles */
+
+.search-bar-wrapper{
+    width: 70%;
+    display: flex;
+    position: relative;
+    background: transparent;
+}
+.search-bar-wrapper #search-bar{
+    display: inline-block;
+    width: 100%;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 2.5px;
+    background:#85b3f733;
+}
+
+.search-icon{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    z-index: 1;
+
+}
+#search-bar::placeholder {
+    color: rgba(245, 245, 245, 0.548);
+    font-size: 14px;
+  }
+
+  /* Header buttons styles */
+
+.action-buttons{
+    width: 40%;
+    text-align: right;
+}
+.action-buttons button{
+    width: 130px;
+    padding: 7.5px 0px;
+    background: transparent;
+    color: whitesmoke;
+    outline: none;
+    border: 2px solid rgba(245, 245, 245, 0.466);
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.action-buttons .green-btn{
+    background: rgb(98, 209, 98);
+    border: none;
+}
+
+/* Main styles */
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+section{
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: white;
+    position: relative;
+}
+h5{
+    font-weight: 400;
+    font-size: 1em;
+}
+h2{
+    font-weight: 400;
+}
+.new-booking-instruct{
+    font-size: 14px;
+    color: #93979d;
+    margin-top: -10px;
+}
+.new-booking{
+    width: 68%;
+    margin: 0 auto;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.services-grid div{
+    position: relative;
+    padding: 20px;
+    border: 0.3px solid rgba(165, 164, 164, 0.541);
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgba(165, 164, 164, 0.541);
+    overflow: hidden;
+}
+.services-grid div:active{
+    background: #0747a6;
+    color: whitesmoke;
+}
+.service-inland-span{
+    padding: 0;
+    margin: 0;
+}
+
+.services-grid div .service-icon{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -15px;
+    top: 10px;
+}
+.services-grid div .service-icon.ship{
+    transform: rotate(0deg);
+    right: -20px;
+    top: 18px;
+}
+.services-grid div .service-icon.truck{
+    transform: rotate(0deg);
+    right: -5px;
+    top: 5px;
+}
+.services-grid div .service-icon.custom-officer{
+    transform: rotate(0deg);
+    right: -5px;
+    top: 8px;
+}
+.hidden{
+    display: none;
+}
+.active{
+    display: inline;
+}
+
+/* location and date styles */
+
+.location-flex{
+    display: grid;
+    grid-template-columns: 0.3fr 0.75fr 0.75fr;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.flex-child-2, .flex-child-3{
+    position: relative;
+}
+.import-export-btn-wrapper{
+    text-align: center;
+    width: 100%;
+    border: 0.5px solid lightgray;
+    border-radius: 3px;
+}
+.flex-child-1{
+    display: flex;
+    justify-content: center;
+    /* width: 65%; */
+    font-size: 12px;
+    color: lightgray;
+}
+.flex-child-1 div{
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-icon{
+    margin-bottom: -20px;
+}
+.import-btn{
+    border-right: 0.5px solid lightgray;
+    cursor: pointer;
+}
+.export-btn{
+    cursor: pointer;
+}
+.import-btn:hover, .export-btn:hover, .import-btn:active, .export-btn:active{
+    background: white;
+    color: #0747a6;
+}
+
+#location-from, #location-to{
+    width: 100%;
+    padding: 10px 30px;
+    background: rgb(243,243,243);
+    border: none;
+}
+.icon-position-absolute{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.shipping-date-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 30px;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+.shipping-date-grid div{
+    width: 100%;
+    position: relative;
+}
+.shipping-date-grid div > input, .shipping-date-grid div > select{
+    width: 100%;
+    padding:10px;
+    font-size: 12px;
+    color: gray;
+    background: #f3f3f3;
+    border: none;
+    border-radius: 3px;
+}
+.shipping-date-grid > div > #date-range-picker{
+    padding-left: 40px;
+}
+
+.shipping-date-grid > div > i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* Cargo details styles */
+
+.danger-cargo{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    font-size: 14px;
+}
+
+.package-weight-form-wrapper{
+    margin-top: 30px;
+}
+.package-weight{
+    width: 30%;
+}
+.package-details-btns{
+    width: 90%;
+    display: flex;
+    border-radius: 5px;
+    border: 0.5px solid lightgray;
+    margin-top: -5px;
+}
+.package-details-btns div{
+    width: 50%;
+    padding: 7px 10px;
+    background: #f3f3f3;
+    color: lightgray;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+.package-details-btns div:active, .package-details-btns div:hover{
+    background: white;
+    color: #0747a6;
+    border: 0.5px solid lightgray;
+    border-radius: 3px;
+}
+form{
+    display: flex;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.884);
+    width: 100%;
+}
+fieldset{
+    border: 2px solid lightgray;
+    width: 100%;
+    margin-right: 10px;
+}
+.second-fieldset{
+    margin-left: 10px;
+}
+form input{
+    width: 100%;
+    border: none;
+}
+
+fieldset div{
+    position: relative;
+}
+fieldset div > span{
+    position: absolute;
+    right: 0;
+    color: #7f7f7f;
+}
+
+/* Additional details styles */
+.additional-details-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+}
+.additional-details-inner-flex{
+    display: flex;
+    margin-top: 30px;
+}
+.service-title{
+    margin-left: 10px;
+}
+
+.service-title h6{
+    font-weight: 400;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 14px;
+}
+.service-title p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #7f7f7f;
+
+}
+
+/* toggle switch styles */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    top: 1px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0747a6;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #0747a6;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 38px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
