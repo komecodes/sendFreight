@@ -62,20 +62,33 @@
       </nav>
     </header>
     <main>
+
+      <!-- Remember the back arrow -->
+
       <div class="new-booking">
         <h2>New Booking</h2>
         <p class="new-booking-instruct">
           Fill in the information below to get a quote or create a new booking
         </p>
       </div>
+
+      <!-- Change container to form such that clicking the "book shipment" btn submits it -->
+      <!-- Remove the nested form elements and use divs? -->
+
       <div class="container">
+        
+        <!-- Services -->
+
         <section class="services">
           <h5>Select a service</h5>
           <div class="services-grid">
+
+            <!-- Air freight -->
+
             <div class="service-option">
               <span>Air Freight</span>
               <span class="service-icon-wrapper">
-                <!-- <svg class="service-icon plane hidden" xmlns="http://www.w3.org/2000/svg" x="0px"
+                <svg class="service-icon plane hidden" xmlns="http://www.w3.org/2000/svg" x="0px"
                 y="0px" width="75" height="90" viewBox="0 0 172 172" style="fill: #000000">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -88,7 +101,7 @@
                     </path>
                   </g>
                 </g>
-              </svg> -->
+              </svg>
                 <svg
                   class="service-icon plane active"
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,6 +138,9 @@
                 </svg>
               </span>
             </div>
+
+            <!-- Sea freight -->
+
             <div class="service-option">
               <span>Sea Freight</span>
               <span class="service-icon-wrapper">
@@ -162,7 +178,7 @@
                     </g>
                   </g>
                 </svg>
-                <!-- <svg class="service-icon ship hidden" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64"
+                <svg class="service-icon ship hidden" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64"
                 height="64" viewBox="0 0 172 172" style="fill: #000000">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -175,9 +191,12 @@
                     </path>
                   </g>
                 </g>
-              </svg> -->
+              </svg>
               </span>
             </div>
+
+            <!-- Inland (Truck & Barge) -->
+
             <div class="service-option">
               <span
                 >Inland
@@ -218,7 +237,7 @@
                     </g>
                   </g>
                 </svg>
-                <!-- <svg class="service-icon truck hidden" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+                <svg class="service-icon truck hidden" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
                   height="100" viewBox="0 0 172 172" style=" fill:#000000;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                     stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -231,9 +250,12 @@
                       </path>
                     </g>
                   </g>
-                </svg> -->
+                </svg>
               </span>
             </div>
+
+            <!-- Custom clearance -->
+
             <div class="service-option">
               <span>Customs Clearance</span>
               <span class="service-icon-wrapper">
@@ -275,6 +297,9 @@
             </div>
           </div>
         </section>
+
+        <!-- Choose Import/Export and fill in Location details (maybe a better name - Freight details eh?) -->
+
         <section class="location-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -369,6 +394,9 @@
             </div>
           </div>
         </section>
+
+        <!-- Cargo details/ Package details -->
+
         <section class="cargo-details">
           <div>
             <h5>Cargo Details</h5>
@@ -416,6 +444,10 @@
             </div>
           </div>
         </section>
+
+        <!-- Additional details -->
+        <!-- Give checkboxes/slider values or use data- attribute to give values to their div container? -->
+
         <section class="additional-details">
           <h5>Additional Services</h5>
           <div class="additional-details-grid">
@@ -459,7 +491,7 @@
                 <span class="slider round"></span>
               </label>
               <div class="service-title">
-                <h6>Transport/Delivery</h6>
+                <h6>Transport / Delivery</h6>
                 <p>We deliver the cargo to your door step from the ports</p>
               </div>
             </div>
@@ -467,7 +499,14 @@
         </section>
       </div>
     </main>
+
+    <!-- Scripts -->
+    <!-- Remove hidden class from white svg icons and add it to the grey svg icon on click -->
+
     <script>
+
+      // Date range picker
+
       $(function () {
         $('input[name="dates"]').daterangepicker({
           autoUpdateInput: false,
@@ -494,6 +533,9 @@
           }
         );
       });
+
+      // Icon toggle function
+
     </script>
   </body>
 </html>
