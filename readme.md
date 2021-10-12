@@ -1,4 +1,4 @@
-# Recreating send.ng New booking page
+# Recreating send.ng new booking page
 
 ## Status
 
