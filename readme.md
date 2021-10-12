@@ -14,6 +14,10 @@ Starting from the header and working my way down, I flexed and grided everything
 
 Got the icons on the page and positioned them as well, and then, came the colors, border, border-radius, font and all the other beauty!
 
+### Currently fixing
+
+I have been able to add an active class which changes the color of the svg icon to white after a click event but it is working only on double click. I am trying to fix that.
+
 -------------------
 
 Written by [@komecodes](https://github.com/komecodes/)

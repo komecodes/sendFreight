@@ -110,6 +110,9 @@ nav, .logo-searchbar-container{
 }
 
 /* Main styles */
+main{
+    position: relative;
+}
 
 .container{
     width: 70%;
@@ -129,6 +132,12 @@ h5{
 }
 h2{
     font-weight: 400;
+}
+main .back-arrow{
+    position: absolute;
+    width: 18px;
+    top: 3px;
+    left: 170px;
 }
 .new-booking-instruct{
     font-size: 14px;
@@ -163,33 +172,37 @@ h2{
     margin: 0;
 }
 
-.services-grid div .service-icon{
+.services-grid div svg{
     transform: rotate(-90deg);
     position: absolute;
     right: -15px;
     top: 10px;
 }
-.services-grid div .service-icon.ship{
+.services-grid div svg.ship{
     transform: rotate(0deg);
     right: -20px;
     top: 18px;
 }
-.services-grid div .service-icon.truck{
+.services-grid div svg.truck{
     transform: rotate(0deg);
     right: -5px;
     top: 5px;
 }
-.services-grid div .service-icon.custom-officer{
+.services-grid div svg.custom-officer{
     transform: rotate(0deg);
     right: -5px;
     top: 8px;
 }
-.hidden{
+/* .hidden{
     display: none;
 }
 .active{
     display: inline;
+} */
+.service-icon.active{
+    fill: #ffffff;
 }
+
 
 /* location and date styles */
 
