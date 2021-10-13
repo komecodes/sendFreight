@@ -499,16 +499,18 @@
       // Icon color change function
 
       let clickedServices = document.querySelectorAll(".service-option");
-      console.log(clickedServices);
+      let icon;
 
       clickedServices.forEach(service => {
         service.addEventListener("click", changeIconColor);
       });
 
-      function changeIconColor(e) {
-        const icon = this.querySelector(".service-icon");
-        console.log(icon);
-          icon.classList.toggle("active");
+      function changeIconColor(event) {
+        if (event) {
+        icon = this.querySelector(".service-icon");
+        icon.classList.toggle("active");
+        this.classList.toggle("active");
+        }
       }
 
     </script>

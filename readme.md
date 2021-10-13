@@ -16,7 +16,7 @@ Got the icons on the page and positioned them as well, and then, came the colors
 
 ### Currently fixing
 
-I have been able to add an active class which changes the color of the svg icon to white after a click event but it is working only on double click. I am trying to fix that.
+I have fixed the issue with the double click. However, now, I need to make sure that only one service is clickable at a time.
 
 -------------------
 

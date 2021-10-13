@@ -134,10 +134,11 @@ h2{
     font-weight: 400;
 }
 main .back-arrow{
-    position: absolute;
+    position: fixed;
     width: 18px;
-    top: 3px;
-    left: 170px;
+    top: 100px;
+    left: 100px;
+    cursor: pointer;
 }
 .new-booking-instruct{
     font-size: 14px;
@@ -163,7 +164,7 @@ main .back-arrow{
     color: rgba(165, 164, 164, 0.541);
     overflow: hidden;
 }
-.services-grid div:active{
+.services-grid div.active{
     background: #0747a6;
     color: whitesmoke;
 }
@@ -193,12 +194,7 @@ main .back-arrow{
     right: -5px;
     top: 8px;
 }
-/* .hidden{
-    display: none;
-}
-.active{
-    display: inline;
-} */
+
 .service-icon.active{
     fill: #ffffff;
 }
@@ -453,3 +449,5 @@ fieldset div > span{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* Media Queries */
